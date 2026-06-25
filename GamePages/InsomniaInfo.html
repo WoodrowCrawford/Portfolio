@@ -49,23 +49,30 @@
                             
                             <h2>Project Overview</h2>
                             <p>
-                                Welcome to Insomnia, the state of mind in which dreams become stagnant, and nightmares run rampant. But in this nightmarish void, nothing is as it seems. Labeled as insane and dismissed as hallucinations, you hear the shadows whispering truths. As the darkness deepens, the monsters in your mind awaken. Can you escape this haunting abyss, or will you be another lost soul in the endless night?
+                                Insomnia is a first-person horror game I made by myself in Unity (C#). It started as my entry for a 48-hour game jam, but I kept going with it, and it's become the longest project I've worked on so far.
+                                 Over a year of development across 36 releases.
+                            </p>
+
+                            <p>
+                                Welcome to Insomnia, the state of mind in which dreams become stagnant, and nightmares run rampant. But in this nightmarish void, nothing is as it seems. Labeled as insane and dismissed as hallucinations,
+                                you hear the shadows whispering truths. As the darkness deepens, the monsters in your mind awaken. Can you escape this haunting abyss, or will you be another lost soul in the endless night?
                             </p>
 
                             <h2>Key Features</h2>
                             <ul>
                                 <li>Immersive horror atmosphere with dynamic lighting and sound</li>
-                                <li>Interaction: players can interact with the environment to hide or distract monsters</li>
-                                <li>Immersive sound design: 3D audio cues and environmental sounds with ambient occlusion</li>
-                                <li>Use of cinemachines and timelines for dynamic storytelling</li>
-                                <li>Customizable settings for a tailored experience</li>
+                                <li>Players can interact with the environment to hide from or distract monsters</li>
+                                <li>3D spatial audio with ambient occlusion (best played with headphones)</li>
+                                <li>Cinemachine and Timeline used for scripted scares and pacing</li>
+                                <li>Customizable settings</li>
                             </ul>
 
                             <h2>Development Details</h2>
                             <ul>
+                                <li><strong>Role:</strong>Solo Developer</li>
                                 <li><strong>Engine:</strong> Unity</li>
                                 <li><strong>Language:</strong> C#</li>
-                                <li><strong>Status:</strong> In Progress (Demo available)</li>
+                                <li><strong>Development:</strong>1+ year, 36 releases, 100+ scripts</li>
                                 <li><strong>Platforms:</strong> Windows PC</li>
                             </ul>
 
@@ -90,9 +97,29 @@
                              <li><a href="https://github.com/WoodrowCrawford/Themed-Horror-Game-Jam8-Halloween-Edition" class="button icon brands fa-github">View Source on GitHub</a></li>
                             </ul>
 
+                            <h2>What I worked on</h2>
+                            <p>
+                                It started as a 48-hour jam game, but the more I worked on it the more I wanted it built properly, so I rewrote it into real systems instead of one giant script.
+                                Most of my time went into the enemy AI and the structure that holds everything together.
+
+                            <li>Built five different enemy AIs (the Clown, Dummy, Ghoul, Jack-in-the-Box, and the Window), each as its own state machine handling wandering, chasing, attacking, and retreating using Unity's NavMesh for pathfinding</li>
+                            <li>Wrote a reusable event system so the different parts of the game can talk to each other without being tangled together</li>
+                            <li>Built the interaction system off a single shared interface, so the bed, doors, light switches, and toys all plug into the same setup</li>
+                            <li>Implemented the sleep mechanic the whole game runs on, with a meter that fills and drains based on what the player's doing</li>
+                            <li>Set up the day-to-night progression as its own state machine</li>
+                            <li>Put the audio system together, with separate handling for music, sound effects, and the volume mixer</li>
+                            <li>Built a fully customizable dialogue system with branching dialogue options</li>
+                            </p>
+
+                            
+
+
                             <h2>Development Insights</h2>
                             <p>
-                                This project has been in the works for over a year, and it has been a labor of love. I wanted to make a horror game that was not only scary but also encapulates the feeling of being a child afraid of the dark. This project has taught me a lot of valuable lessons about game development, from sound design to level design and game design. I also learned a lot about cinemachines and timelines, which were crucial for creating the game's atmosphere and pacing. Overall, Insomnia has been a challenging but rewarding project that has pushed my skills as a game developer.
+                                This project has been in the works for over a year, and it's been a labor of love.
+                                I wanted to make a horror game that was actually scary, but more than that, I wanted it to capture what it feels like to be a kid who's afraid of the dark.
+                                It's taught me a ton, not just about building systems, but about sticking with one project long enough to see it through and going back to rebuild parts when they weren't good enough.
+                                Insomnia is the most challenging thing I've made, and easily the most rewarding.
                             </p>
                         </section>
                     </div>
