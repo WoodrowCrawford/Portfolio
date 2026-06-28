@@ -99,16 +99,16 @@
 
                             <h2>What I worked on</h2>
                             <p>
-                                It started as a 48-hour jam game, but the more I worked on it the more I wanted it built properly, so I rewrote it into real systems instead of one giant script.
-                                Most of my time went into the enemy AI and the structure that holds everything together.
+                                This started as a 48 hour game jam, but I liked it too much to leave it there, so I went back and rebuilt it into actual systems instead of one giant messy script. 
+                                Most of my time went into the enemy AI and the systems that hold the whole game together. The main things I built:
+                                <li>Five enemies, each built with the finite state machine method, using Unity's NavMesh for movement</li>
+                                <li>An event system so the different parts of the game can talk without being tangled together</li>
+                                <li>A shared interaction setup the bed, doors, light switches, and toys all run off</li>
+                                <li>The sleep mechanic the whole game is based on</li>
+                                <li>The day to night progression, built as its own state machine</li>
+                                <li>Audio occlusion for more immersive sound, plus ambient noise I recorded and sound effects I edited myself</li>
+                                <li>The dialogue system, menus, settings, pause, HUD, and a flashlight with a battery meter</li>
 
-                            <li>Built five different enemy AIs (the Clown, Dummy, Ghoul, Jack-in-the-Box, and the Window), each as its own state machine handling wandering, chasing, attacking, and retreating using Unity's NavMesh for pathfinding</li>
-                            <li>Wrote a reusable event system so the different parts of the game can talk to each other without being tangled together</li>
-                            <li>Built the interaction system off a single shared interface, so the bed, doors, light switches, and toys all plug into the same setup</li>
-                            <li>Implemented the sleep mechanic the whole game runs on, with a meter that fills and drains based on what the player's doing</li>
-                            <li>Set up the day-to-night progression as its own state machine</li>
-                            <li>Put the audio system together, with separate handling for music, sound effects, and the volume mixer</li>
-                            <li>Built a fully customizable dialogue system with branching dialogue options</li>
                             </p>
 
                             

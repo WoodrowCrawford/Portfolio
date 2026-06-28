@@ -49,20 +49,23 @@
 
                             <h2>Project Overview</h2>
                             <p>
-                                Safe Web is a visual novel game I helped develop for a horror game jam. The game features a virtual computer interaction system where players can navigate through files, go on the web, and uncover the story. The game combines elements of horror and mystery to create an engaging experience.
+                                Safe Web is a horror game made by a team for a Spooktober game jam, built in Unity (C#), with me as the main programmer. 
+                                The whole game takes place on a fake computer: you click around a desktop, open folders, browse a pretend internet, and the horror surfaces through what you find. 
+                                Can you uncover the story hidden in the files and websites?
                             </p>
 
                             <h2>Key Features</h2>
                             <ul>
-                                <li>Virtual computer interaction</li>
-                                <li>Voice acting</li>
-                                <li>Retro aesthetics</li>
-                                <li>Engaging horror narrative</li>
+                                <li>Virtual computer desktop you actually click around: icons, folders, a chat app, and a video call window</li>
+                                <li>A simulated web browser with several in game websites, plus back/history and favorites</li>
+                                <li>Multiple endings based on the choices you make</li>
+                                <li>Voice acting and a retro computer look</li>
                             </ul>
 
                             <h2>Development Details</h2>
                             <ul>
-                                <li><strong>Engine:</strong> Unity</li>
+                                <li><strong>Role:</strong> Main Programmer (team project)</li>
+                                <li><strong>Engine:</strong> Unity (with Naninovel visual novel framework)</li>
                                 <li><strong>Language:</strong> C#</li>
                                 <li><strong>Status:</strong> Completed</li>
                                 <li><strong>Platforms:</strong> Windows, Mac</li>
@@ -84,9 +87,24 @@
                                 <li><a href="https://github.com/WoodrowCrawford/2025-Spooktober-Jam" class="button icon brands fa-github">View Source on GitHub</a></li>
                             </ul>
 
+                            <h2>What I worked on</h2>
+                            <p>
+                                Safe Web is a horror game disguised as a computer: you click around a virtual desktop, browse websites, and the story surfaces through what you find. Naninovel runs the dialogue scenes the writers wrote; everything the player clicks, and the system that decides which part of the story happens next, was the programming side, and the half of the project I owned as main programmer.
+                                The whole thing runs on an event-driven setup, the desktop, browser, apps, and story communicate through events instead of being wired together directly. The main systems:
+
+                                <li><strong>Story progression brain:</strong> Built a chapter and task system that tracks where the player is, what they've done, and only advances the story once the right conditions are met</li>
+                                <li><strong>Two way story integration:</strong> Connected that system to Naninovel in both directions: reading and writing the engine's story variables from C# so the story can control what the player's allowed to do, while the player's clicks trigger the right story scenes</li>
+                                <li><strong>Engine extension:</strong> Wrote a set of custom Naninovel commands so the writers could trigger gameplay straight from the script: open a website, pop a captcha or ID check, glitch the on screen video call or send a chat notification</li>
+                                <li><strong>Virtual desktop OS:</strong> Built the desktop and its apps in Unity's Canvas/UI system: draggable icons, a start menu, a taskbar, a browser, folders, an archive, a chat app, and a video call window, plus a full popup system for errors, downloads, captchas, and ID verification</li>
+                                <li><strong>Simulated web browser:</strong> Five in game websites with multiple pages each, back/history navigation, a favorites button, and managed scrolling</li>
+                                <li><strong>Event-driven architecture:</strong> Ensured that all major systems (desktop, browser, apps, story) communicate through events, allowing for a decoupled and flexible design that makes it easier to manage complex interactions and extend the game in the future</li>
+                                <li><strong>Save/load that survives the framework:</strong> Hooked the browser's state into Naninovel's save system so it restores the exact site and page you had open, including working around the engine's habit of hiding custom UI on load</li>
+                            </p>
+
                             <h2>Development Insights</h2>
                             <p>
-                                Working on Safe Web was a unique experience as it involved creating a virtual computer system within the game. My role in this project was the main programmer, and I was responsible for implementing the core mechanics of the virtual computer. This required careful planning and implementation to ensure that players could interact with the system seamlessly. The voice acting added an extra layer of immersion, enhancing the overall atmosphere of the game. Collaborating with a team to bring this project to life was both challenging and rewarding.
+                                Safe Web was a fun and interesting project to work on because of its unique mechanics. Instead of a normal game world, the whole game takes place on a fake computer, so the challenge was making a desktop and a browser that actually felt real, then letting the story take control of them to set up the scares. 
+                                Getting all those pieces to work together was tricky, and doing it with a team made it a really rewarding one to be part of.
                             </p>
                         </section>
                     </div>
