@@ -89,16 +89,18 @@
 
                             <h2>What I worked on</h2>
                             <p>
-                                Safe Web is a horror game disguised as a computer: you click around a virtual desktop, browse websites, and the story surfaces through what you find. Naninovel runs the dialogue scenes the writers wrote; everything the player clicks, and the system that decides which part of the story happens next, was the programming side, and the half of the project I owned as main programmer.
-                                The whole thing runs on an event-driven setup, the desktop, browser, apps, and story communicate through events instead of being wired together directly. The main systems:
+                                Naninovel runs the story scenes the writers wrote, but everything you actually click on, the desktop, the websites, all of it, was mine to build as the main programmer. 
+                                The whole thing runs on events, so the desktop, browser, and story all talk to each other without being wired together directly. The main things I built:
 
-                                <li><strong>Story progression brain:</strong> Built a chapter and task system that tracks where the player is, what they've done, and only advances the story once the right conditions are met</li>
-                                <li><strong>Two way story integration:</strong> Connected that system to Naninovel in both directions: reading and writing the engine's story variables from C# so the story can control what the player's allowed to do, while the player's clicks trigger the right story scenes</li>
-                                <li><strong>Engine extension:</strong> Wrote a set of custom Naninovel commands so the writers could trigger gameplay straight from the script: open a website, pop a captcha or ID check, glitch the on screen video call or send a chat notification</li>
-                                <li><strong>Virtual desktop OS:</strong> Built the desktop and its apps in Unity's Canvas/UI system: draggable icons, a start menu, a taskbar, a browser, folders, an archive, a chat app, and a video call window, plus a full popup system for errors, downloads, captchas, and ID verification</li>
-                                <li><strong>Simulated web browser:</strong> Five in game websites with multiple pages each, back/history navigation, a favorites button, and managed scrolling</li>
-                                <li><strong>Event-driven architecture:</strong> Ensured that all major systems (desktop, browser, apps, story) communicate through events, allowing for a decoupled and flexible design that makes it easier to manage complex interactions and extend the game in the future</li>
-                                <li><strong>Save/load that survives the framework:</strong> Hooked the browser's state into Naninovel's save system so it restores the exact site and page you had open, including working around the engine's habit of hiding custom UI on load</li>
+                                <ul>
+                                    <li>The system that runs the story, tracking what chapter you're on and what you've done, and only moving forward once you've done the right things</li>
+                                    <li>A two way hookup into Naninovel, reading and writing its story variables in C#, so the story controls what you can do and your clicks push the story forward</li>
+                                    <li>Custom Naninovel commands so the writers could trigger my systems straight from the script (open a website, pop a captcha or ID check, glitch the call window)</li>
+                                    <li>The whole desktop in Unity's Canvas and UI: icons, start menu, taskbar, browser, folders, an archive, a chat app, a video call window, and all the popups</li>
+                                    <li>A browser with several websites, multiple pages each, back and history navigation, favorites, and scrolling</li>
+                                    <li>Save and load for the browser, so it remembers which site you had open (which meant fighting Naninovel a bit, since it likes to hide custom UI on load)</li>
+                                    <li>A code puzzle where passwords hidden across the sites unlock a locked folder, tied into one of the endings</li>
+                                </ul>
                             </p>
 
                             <h2>Development Insights</h2>
