@@ -49,21 +49,23 @@
 
                             <h2>Project Overview</h2>
                             <p>
-                                Project 2D Fanbase is a passion project I created in Unity that is similar to Pokemon. The player can walk around the grass to encounter a pokemon to battle.
+                                Project 2D Fanbase is a passion project I built in Unity on my own time, a Pokémon-style RPG. You walk around, run into creatures in the grass, and fight them in turn-based battles. I made it to challenge myself and learn how a system like Pokémon actually works under the hood.
                             </p>
 
                             <h2>Key Features</h2>
                             <ul>
-                                <li>Pokemon-like gameplay</li>
-                                <li>Use of scriptable objects</li>
-                                <li>Retro aesthetics</li>
+                                <li>A Pokémon-style turn-based battle system</li>
+                                <li>Data-driven creatures built as ScriptableObjects, with stats, types, and learnable moves</li>
+                                <li>A full type-effectiveness chart, so attacks are super effective or not very effective like the real thing</li>
+                                <li>Grass encounters and a retro overworld</li>
                             </ul>
 
                             <h2>Development Details</h2>
                             <ul>
+                                <li><strong>Role:</strong> Sole Developer</li>
                                 <li><strong>Engine:</strong> Unity</li>
                                 <li><strong>Language:</strong> C#</li>
-                                <li><strong>Status:</strong> Completed</li>
+                                <li><strong>Status:</strong> In Development</li>
                                 <li><strong>Platforms:</strong> Windows</li>
                             </ul>
 
@@ -73,9 +75,21 @@
                                 <li><a href="https://github.com/WoodrowCrawford/Project-2d-fanbase" class="button icon brands fa-github">View Source on GitHub</a></li>
                             </ul>
 
+
+                            <h2>What I Worked On</h2>
+                            <p>
+                                I built this one solo, on my own time, to figure out how an RPG like Pokémon actually works underneath. That meant building the systems from the ground up:
+                                <ul>
+                                    <li>Creatures made as ScriptableObjects, so I can create a whole new one (stats, types, moves, sprites) as an asset without writing any code</li>
+                                    <li>A runtime layer that builds a creature from that data, hands it the moves it's high enough level to know, and calculates its stats with real formulas</li>
+                                    <li>A turn-based battle system built as a state machine, with menu-driven actions, an HP bar, and battle dialogue</li>
+                                    <li>The full type chart, so every attack checks its type against the target's and deals the right effectiveness</li>
+                                </ul>
+                            </p>
+
                             <h2>Development Insights</h2>
                             <p>
-                                I created this project to learn more about Unity and to create a game that is similar to Pokemon. The game is designed to be simple yet engaging, with a focus on gameplay mechanics and aesthetics. The project was completed in a short time frame, and I learned a lot about using scriptable objects and making a turned based battle system.
+                                I made this as a passion project to push myself and understand how a game like Pokémon is put together. The most rewarding part was the systems work, using ScriptableObjects to keep the creature data separate from the code, and building the battle and type systems so they'd actually behave like the real thing. I learned a ton about designing data-driven systems, which is something I've carried into everything I've built since.
                             </p>
                         </section>
                     </div>
