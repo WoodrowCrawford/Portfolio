@@ -49,22 +49,22 @@
 
                             <h2>Project Overview</h2>
                             <p>
-                                A tool I developed in .NET for managing JSON data. The tool allows users to create, edit, and delete character entries. Each character entry includes fields for name, role, and level. The tool is designed to be user-friendly and efficient for managing character data in game development projects.
+                                Character Data Tool is a command-line program I built in .NET (C#) for managing character data stored in JSON. From a simple text menu, you can view all your characters and add, edit, or delete them, and every change is saved straight back to the JSON file. I made it to teach myself how to work with JSON and file storage in C#.
                             </p>
 
                             <h2>Key Features</h2>
                             <ul>
-                                <li>Manage character data efficiently</li>
-                                <li>Create, edit, and delete character entries</li>
-                                <li>User-friendly interface</li>
-                            </ul>
+                                <li>Add, edit, and delete character entries from a simple menu</li>
+                                <li>Reads and writes JSON, so all your changes are saved to disk</li>
+                                <li>Input handling for bad entries, invalid numbers, and empty fields</li>                            </ul>
 
                             <h2>Development Details</h2>
                             <ul>
                                 <li><strong>Framework:</strong> .NET</li>
                                 <li><strong>Language:</strong> C#</li>
+                                <li><strong>Type:</strong> Command-line application</li>
                                 <li><strong>Status:</strong> Completed</li>
-                                <li><strong>Platforms:</strong> Windows</li>
+                                <li><strong>Platforms:</strong> Cross-platform (.NET)</li>
                             </ul>
 
                             <h2>Media</h2>
@@ -81,9 +81,20 @@
                                 <li><a href="https://github.com/WoodrowCrawford/CharacterDataTool" class="button icon brands fa-github">View Source on GitHub</a></li>
                             </ul>
 
+                            <h2>What I worked on</h2>
+                            <p>
+                                A solo project to get comfortable with JSON and file handling in C#, before I moved on to building an actual API. What I built:
+                                <ul>
+                                    <li>Loading character data from a JSON file into C# objects, and writing it back out so changes stick</li>
+                                    <li>A menu loop for adding, editing, and deleting characters</li>
+                                    <li>Validation for the things users get wrong, missing files, non-number input, empty fields, and out-of-range choices</li>
+                                </ul>
+                            </p>
+
                             <h2>Development Insights</h2>
                             <p>
-                                This tool was developed to streamline the process of managing character data in game development projects. By leveraging .NET and C#, I was able to create a robust and user-friendly application that simplifies the creation, editing, and deletion of character entries. The project provided valuable experience in working with JSON data and designing intuitive interfaces for developers.
+                                This was one of my first steps into .NET outside of game engines. It's simple on the surface, a console app, but it's where I got comfortable reading and writing JSON and handling all the ways user input can go wrong. It's also what led directly into my Character Vault API project, where I took the same ideas and built them into a proper REST backend.
+                            </p>
                         </section>
                     </div>
 

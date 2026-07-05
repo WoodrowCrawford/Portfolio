@@ -48,21 +48,22 @@
 
                             <h2>Project Overview</h2>
                             <p>
-                                A small prototype I created in Unreal Engine while I was in college. The project demonstrates a basic inventory system where the player can pick up items and store them in an inventory. The system is designed to be simple yet functional, showcasing the core mechanics of an inventory system in a game.
+                                A prototype I built in Unreal Engine during college to learn how to architect an inventory system in C++. The player can pick up items, store them in a limited inventory, and use them, and I focused on structuring it properly, with C++ handling the logic and Blueprints handling the items and UI on top.
                             </p>
 
                             <h2>Key Features</h2>
                             <ul>
-                                <li>Simple and intuitive inventory management</li>
-                                <li>Drag and drop functionality for item management</li>
-                                <li>Basic UI elements for inventory display</li>
-                                <li>Ability to pick up and use items</li>
+                                <li>Pick up, store, and use items, with a capacity limit</li>
+                                <li>An abstract item base class that specific items (like food that heals you) build on</li>
+                                <li>An inventory built as a reusable component any actor can have</li>
+                                <li>A UI that updates itself whenever the inventory changes</li>
+                                <li>Designer-friendly, new items can be made in Blueprints without touching code</li>
                             </ul>
 
                             <h2>Development Details</h2>
                             <ul>
                                 <li><strong>Engine:</strong> Unreal Engine</li>
-                                <li><strong>Language:</strong> C++</li>
+                                <li><strong>Language:</strong> C++ (with Blueprints for items and UI)</li>
                                 <li><strong>Status:</strong> Completed</li>
                                 <li><strong>Platforms:</strong> Windows</li>
                             </ul>
@@ -74,9 +75,20 @@
                                 <li><a href="https://github.com/WoodrowCrawford/NewInventorySystem2" class="button icon brands fa-github">View Source on GitHub</a></li>
                             </ul>
 
+                            <h2>What I worked on</h2>
+                            <p>
+                                A solo college prototype where the point was learning to structure an inventory the way a real Unreal project would, not just make one that works. What I built:
+                                <ul>
+                                    <li>An abstract item base class with a virtual Use function, so different item types (like food that heals you) can define their own behavior</li>
+                                    <li>The inventory as a component, with add, remove, and a capacity limit, so it can be dropped onto any actor</li>
+                                    <li>An event that fires whenever the inventory changes, which the Blueprint UI listens to so it updates on its own</li>
+                                    <li>Item definitions exposed to the editor, so new items can be created in Blueprints without writing more C++</li>
+                                </ul>
+                            </p>
+
                             <h2>Development Insights</h2>
                             <p>
-                                I created this project to learn more about Unreal Engine and how to implement a basic inventory system. The project allowed me to experiment with UI design, item management, and player interaction. The focus was on creating a functional and user-friendly inventory system that could be expanded upon in future projects.
+                                This was me learning how Unreal projects are actually structured in C++. The interesting part wasn't the inventory working, it was designing it well, using an abstract base class for items, building the inventory as a reusable component, and firing an event to keep the UI in sync instead of hard-wiring it. It taught me a lot about inheritance, components, and how C++ and Blueprints are meant to work together in Unreal.
                             </p>
                         </section>
                     </div>

@@ -49,21 +49,22 @@
 
                             <h2>Project Overview</h2>
                             <p>
-                                A small prototype I created in college to demonstrate the use of the A* pathfinding algorithm. The player controls a character that can move around a grid-based map, while the AI controlled enemy chases the player using the A* algorithm to find the shortest path to the player.
+                                A pathfinding project I built in college in C++, where an AI-controlled ghost chases the player through a maze using the A* algorithm. I built it to really understand how pathfinding works, so instead of using a library, I implemented A* from scratch, along with the node graph and steering behaviors it runs on.
                             </p>
 
                             <h2>Key Features</h2>
                             <ul>
-                                <li>A* pathfinding algorithm implementation</li>
-                                <li>Made in the console window</li>
-                                <li>Simple grid-based movement</li>
-                                <li>AI that chases the player</li>
+                                <li>A* pathfinding implemented from scratch in C++</li>
+                                <li>A node-graph system representing the maze for the algorithm to search</li>
+                                <li>Steering behaviors (seek, pursue, follow-path) driving the AI</li>
+                                <li>A hand-written math library for the vector and matrix math</li>
+                                <li>Rendered with raylib</li>
                             </ul>
 
                             <h2>Development Details</h2>
                             <ul>
-                                <li><strong>Engine:</strong> Console Window</li>
                                 <li><strong>Language:</strong> C++</li>
+                                <li><strong>Library:</strong> raylib (graphics)</li>
                                 <li><strong>Status:</strong> Completed</li>
                                 <li><strong>Platforms:</strong> Windows</li>
                             </ul>
@@ -75,9 +76,20 @@
                                 <li><a href="https://github.com/WoodrowCrawford/Pac-Like" class="button icon brands fa-github">View Source on GitHub</a></li>
                             </ul>
 
+                            <h2>What I worked on</h2>
+                            <p>
+                                I built this in college to actually understand pathfinding instead of just using something prebuilt, so I wrote the whole thing in C++ from the ground up. What I built:
+                                <ul>
+                                    <li>The A* algorithm itself, an open and closed list, sorting nodes by their f-score to always explore the cheapest path first, then tracing back through parent nodes to build the final route</li>
+                                    <li>A node graph representing the maze that the algorithm searches across</li>
+                                    <li>Steering behaviors (seek, pursue, and path-following) that move the ghost along the path A* finds</li>
+                                    <li>A math library I wrote myself for the vectors and matrices everything is built on</li>
+                                </ul>
+                            </p>
+
                             <h2>Development Insights</h2>
                             <p>
-                                I created this project to learn more about pathfinding algorithms and how they can be implemented in a game. The A* algorithm is a popular choice for pathfinding in games, and this project allowed me to experiment with it in a simple environment. The AI behavior was designed to be straightforward, focusing on the core mechanics of pathfinding rather than complex AI logic.
+                                This is the project I'm proudest of on the fundamentals side. Implementing A* from scratch, not calling a library, but actually building the open and closed lists and the scoring myself, taught me how pathfinding really works under the hood. Writing my own math library and the node graph underneath it pushed my C++ and my understanding of data structures a lot further. It's the project that made algorithms click for me.
                             </p>
                         </section>
                     </div>

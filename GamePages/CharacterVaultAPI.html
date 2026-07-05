@@ -49,22 +49,24 @@
 
                             <h2>Project Overview</h2>
                             <p>
-                                An API I developed in .NET for managing character data in games. The API allows developers to create, read, update, and delete character entries, providing a robust backend solution for game projects. Each character entry includes fields for name, role, and level, making it easy to manage character data efficiently.
+                                Character Vault is a REST API I built in .NET (C#) for managing game character data. It's a full CRUD backend, developers can create, read, update, and delete characters, each with a name, class, and level. I built it to learn how to design a real backend API properly, so I structured it the way a production .NET service would be, rather than just throwing endpoints together.
                             </p>
 
                             <h2>Key Features</h2>
                             <ul>
-                                <li>Manage character data efficiently</li>
-                                <li>Create, read, update, and delete character entries</li>
-                                <li>Robust backend solution for game projects</li>
+                                <li>A full REST API with create, read, update, and delete operations</li>
+                                <li>Built on the repository pattern with dependency injection, so the storage layer can be swapped out without touching the API</li>
+                                <li>Separate request models for creating and updating, following proper API design</li>
+                                <li>Input validation and correct HTTP status codes (201, 400, 404, 204)</li>
+                                <li>Swagger UI for testing and documentation</li>
                             </ul>
 
                             <h2>Development Details</h2>
                             <ul>
-                                <li><strong>Framework:</strong> .NET</li>
+                                <li><strong>Framework:</strong> .NET (ASP.NET Core Minimal APIs)</li>
                                 <li><strong>Language:</strong> C#</li>
                                 <li><strong>Status:</strong> Completed</li>
-                                <li><strong>Platforms:</strong> Windows</li>
+                                <li><strong>Platforms:</strong> Cross-platform (.NET)</li>
                             </ul>
 
                             
@@ -74,9 +76,23 @@
                                 <li><a href="https://github.com/WoodrowCrawford/CharacterVaultAPI" class="button icon brands fa-github">View Source on GitHub</a></li>
                             </ul>
 
+                            <h2>What I worked on</h2>
+                            <p>
+                                I built this solo to teach myself how real backend APIs are designed, not just to make one that works, but to structure it the way a professional .NET project would be. What I built:
+                                <ul>
+                                    <li>The full set of REST endpoints for creating, reading, updating, and deleting characters</li>
+                                    <li>A repository behind an interface, injected through dependency injection, so the data source is swappable (it currently reads and writes JSON, but nothing in the API depends on that)</li>
+                                    <li>Separate models for create and update requests, kept apart from the character entity itself</li>
+                                    <li>Validation on incoming data, with the API returning the right HTTP status code for each outcome</li>
+                                    <li>Swagger integration so the whole thing is self-documenting and testable in the browser</li>
+                                </ul>
+                            </p>
+
                             <h2>Development Insights</h2>
                             <p>
-                                This API was developed to provide a robust backend solution for managing character data in games. By leveraging .NET and C#, I was able to create a flexible and efficient system that allows developers to easily create, read, update, and delete character entries. The project provided valuable experience in designing APIs and working with data management in a game development context.
+                                This was me stepping outside of game engines to learn proper backend development. The interesting part wasn't the CRUD itself, it was structuring the project well, using an interface and dependency injection so the storage layer isn't locked in, splitting out request models, and handling validation and status codes the right way. I learned a lot about how real APIs are designed, and it's the project that got me genuinely interested in the software side beyond just games.
+                            </p>
+                            
                         </section>
                     </div>
 
