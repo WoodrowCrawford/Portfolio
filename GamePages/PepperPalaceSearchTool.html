@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Pepper Palace Search Tool - Project Details</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../assets/css/main.css?v=2" />
+        <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Header -->
+                    <header id="header">
+                        <a href="../GamePages/PepperPalaceSearchToolInfo.html" class="logo">Pepper Palace Search Tool</a>
+                    </header>
+
+                <!-- Nav -->
+                    <nav id="nav">
+                        <ul class="links">
+                            <li><a href="../index.html">Games I have made</a></li>
+                            <li><a href="../indexPage2.html">Prototypes</a></li>
+                            <li><a href="../AboutMe.html">About Me</a></li>
+                        </ul>
+                        <ul class="icons">
+                            <li><a href="https://www.linkedin.com/in/woodrow-crawford/" class="fab fa-linkedin"><span class="label"></span></a></li>
+                            <li><a href="https://pheonyxgames.itch.io/" class="fab fa-itch-io"><span class="label"></span></a></li>
+                            <li><a href="https://github.com/WoodrowCrawford" class="fab fa-github"><span class="label"></span></a></li>
+                        </ul>
+                    </nav>
+
+                <!-- Main -->
+                    <div id="main">
+                        <section class="post">
+                            <header class="major">
+                                <h1>Pepper Palace Search Tool<br /><span style="font-size:1.2rem;font-weight:normal;">A Deep Dive</span></h1>
+                                <p>A REST API I built to solve a real problem at my job, backed by a MySQL database and deployed to the cloud.<br>
+                                <br>
+                                </p>
+                            </header>
+                            <span class="image main"><img src="../images/PepperPalace/PepperPalaceSwaggerUI.png" alt="Pepper Palace Search Tool API Swagger page" /></span>
+
+                            <h2>Project Overview</h2>
+                            <p>
+                                Pepper Palace Search Tool is a REST API I built to solve a real problem from my job. I work as a salesperson at Pepper Palace, and I kept struggling to remember which foods paired well with which hot sauces. So I built a tool to look it up, one that could help me sell better and double as a training tool for new employees. It's backed by a real MySQL database and deployed live to the cloud.
+                            </p>
+
+                            <h2>Key Features</h2>
+                            <ul>
+                                <li>A full REST API for sauces, foods, and their pairings</li>
+                                <li>Backed by a MySQL database using Entity Framework Core</li>
+                                <li>A layered design (controllers, services, DTOs) with dependency injection</li>
+                                <li>A many-to-many pairing system built on a junction table</li>
+                                <li>Search endpoints that filter by sauce type, heat level, and name</li>
+                                <li>Deployed to Azure, with a Swagger page you can try in the browser</li>
+                            </ul>
+
+                            <h2>Development Details</h2>
+                            <ul>
+                                <li><strong>Framework:</strong> ASP.NET Core (.NET)</li>
+                                <li><strong>Language:</strong> C#</li>
+                                <li><strong>Database:</strong> MySQL with Entity Framework Core</li>
+                                <li><strong>Hosting:</strong> Azure App Service</li>
+                                <li><strong>Status:</strong> In Progress (backend built, front end in the works)</li>
+                            </ul>
+
+                            <h2>Download &amp; Source</h2>
+                            <ul class="actions">
+                                <li><a href="https://github.com/WoodrowCrawford/PepperPalaceSearchTool" class="button icon brands fa-github">View Source on GitHub</a></li>
+                                <li><a href="https://pepper-palace-api-gya0b3cbgwhchjce.westus3-01.azurewebsites.net/swagger/index.html" class="button primary">Try the Live Demo</a></li>
+                            </ul>
+
+                            <h2>What I worked on</h2>
+                            <p>
+                                I built this on my own to solve a real problem at work: quickly finding which foods go with which sauces. To make it something that could actually be used, not just a demo, I built it like a real backend service. What I built:
+                                <ul>
+                                    <li>A layered API where controllers handle the requests, services handle the logic, and DTOs shape the responses, wired together with dependency injection</li>
+                                    <li>A MySQL database with a many-to-many relationship, so sauces and foods pair with each other through a junction table</li>
+                                    <li>LINQ queries that join the sauce, food, and pairing tables and group them, so each sauce comes back with all the foods it goes with</li>
+                                    <li>Search endpoints that filter by sauce type, heat level, and name</li>
+                                    <li>The whole thing deployed to Azure with a Swagger page, so anyone can actually use it, not just me on my machine</li>
+                                </ul>
+                            </p>
+
+                            <h2>Development Insights</h2>
+                            <p>
+                                This is the project I'm proudest of, because I didn't build it for a class, I built it to solve an actual problem I was having at my job. I wanted a fast way to match foods to sauces so I could sell better and help train new hires. This is where I really started learning backend development and databases, designing the database, using an ORM, structuring the code in clean layers, and deploying it to the cloud. Right now it's a work in progress: the backend and database are built, and I'm teaching myself front-end development so I can build a proper interface for it. It's the project that got me into full-stack, and I'm still building on it as I learn.
+                            </p>
+                            <p>
+                                <em>Note: this is a personal passion project I made to help increase sales output and learn full-stack development. It is not an official tool created by Pepper Palace.</em>
+                            </p>
+
+                        </section>
+                    </div>
+
+                <!-- Footer -->
+                    <footer id="footer">
+                        <section class="split contact">
+                            <section>
+                                <h3>Phone</h3>
+                                <p>(606) 271-4122</p>
+                            </section>
+                            <section>
+                                <h3>Email</h3>
+                                <p>woodrowcrawford03@gmail.com</p>
+                            </section>
+                            <section>
+                                <h3>Social</h3>
+                                <ul class="icons alt">
+                                    <li><a href="https://www.linkedin.com/in/woodrow-crawford/" class="fab fa-linkedin"><span class="label"></span></a></li>
+                                    <li><a href="https://pheonyxgames.itch.io/" class="fab fa-itch-io"><span class="label"></span></a></li>
+                                    <li><a href="https://github.com/WoodrowCrawford" class="fab fa-github"><span class="label"></span></a></li>
+                                </ul>
+                            </section>
+                        </section>
+                    </footer>
+
+                <!-- Copyright -->
+                    <div id="copyright">
+                        <ul><li>&copy; Woodrow Crawford</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+                    </div>
+
+            </div>
+
+        <!-- Scripts -->
+            <script src="../assets/js/jquery.min.js"></script>
+            <script src="../assets/js/jquery.scrollex.min.js"></script>
+            <script src="../assets/js/jquery.scrolly.min.js"></script>
+            <script src="../assets/js/browser.min.js"></script>
+            <script src="../assets/js/breakpoints.min.js"></script>
+            <script src="../assets/js/util.js"></script>
+            <script src="../assets/js/main.js"></script>
+
+    </body>
+</html>
