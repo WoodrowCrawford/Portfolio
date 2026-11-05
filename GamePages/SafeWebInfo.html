@@ -1,153 +1,260 @@
-<!DOCTYPE HTML>
+<!doctype html>
+
 <!--
     Massively by HTML5 UP
     html5up.net | @ajlkn
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    <head>
-        <title>Safe Web - Project Details</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="../assets/css/main.css?v=2" />
-        <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
-    </head>
-    <body class="is-preload">
-
-        <!-- Wrapper -->
-            <div id="wrapper">
-
-                <!-- Header -->
-                    <header id="header">
-                        <a href="../GamePages/SafeWebInfo.html" class="logo">Safe Web</a>
-                    </header>
-
-                <!-- Nav -->
-                    <nav id="nav">
-                        <ul class="links">
-                            <li><a href="../index.html">Games</a></li>
-                            <li><a href="../indexPage2.html">Games (Page 2)</a></li>
-                            <li><a href="../AboutMe.html">About Me</a></li>
-                        </ul>
-                        <ul class="icons">
-                            <li><a href="https://www.linkedin.com/in/woodrow-crawford/" class="fab fa-linkedin"><span class="label"></span></a></li>
-                            <li><a href="https://pheonyxgames.itch.io/" class="fab fa-itch-io"><span class="label"></span></a></li>
-                            <li><a href="https://github.com/WoodrowCrawford" class="fab fa-github"><span class="label"></span></a></li>
-                        </ul>
-                    </nav>
-
-                <!-- Main -->
-                    <div id="main">
-                        <section class="post">
-                            <header class="major">
-                                <h1>Safe Web<br /><span style="font-size:1.2rem;font-weight:normal;">A Deep Dive</span></h1>
-                                <p>A visual novel created in Unity for a horror game jam. Includes a virtual computer interaction system.
-                                <br>
-                                </p>
-                            </header>
-                            <span class="image main"><img src="../images/SafeWeb/wlARTY.png" alt="" /></span>
-
-                            <h2>Project Overview</h2>
-                            <p>
-                                Safe Web is a horror game made by a team for a Spooktober game jam, built in Unity (C#), with me as the main programmer. 
-                                The whole game takes place on a fake computer: you click around a desktop, open folders, browse a pretend internet, and the horror surfaces through what you find. 
-                                Can you uncover the story hidden in the files and websites?
-                            </p>
-
-                            <h2>Key Features</h2>
-                            <ul>
-                                <li>Virtual computer desktop you actually click around: icons, folders, a chat app, and a video call window</li>
-                                <li>A simulated web browser with several in game websites, plus back/history and favorites</li>
-                                <li>Multiple endings based on the choices you make</li>
-                                <li>Voice acting and a retro computer look</li>
-                            </ul>
-
-                            <h2>Development Details</h2>
-                            <ul>
-                                <li><strong>Role:</strong> Main Programmer (team project)</li>
-                                <li><strong>Engine:</strong> Unity (with Naninovel visual novel framework)</li>
-                                <li><strong>Language:</strong> C#</li>
-                                <li><strong>Status:</strong> Completed</li>
-                                <li><strong>Platforms:</strong> Windows, Mac</li>
-                            </ul>
-
-                            <h2>Media</h2>
-                            <div class="row gtr-50 gtr-uniform">
-                                <div class="col-4"><span class="image fit"><img src="../images/SafeWeb/5_XoKE.png" alt="" /></span></div>
-                                <div class="col-4"><span class="image fit"><img src="../images/SafeWeb/Ng5ssZ.png" alt="" /></span></div>
-                                <div class="col-4"><span class="image fit"><img src="../images/SafeWeb/oFV9J3.png" alt="" /></span></div>
-                                <div class="col-4"><span class="image fit"><img src="../images/SafeWeb/aofvCP.png" alt="" /></span></div>
-                                <div class="col-4"><span class="image fit"><img src="../images/SafeWeb/v+omX6.png" alt="" /></span></div>
-                            </div>
-
-
-                            <h2>Download & Source</h2>
-                            <ul class="actions">
-                                <li><a href="https://madval.itch.io/safe-web-game" class="button icon brands fa-itch-io">Download on itch</a></li>
-                                <li><a href="https://github.com/WoodrowCrawford/2025-Spooktober-Jam" class="button icon brands fa-github">View Source on GitHub</a></li>
-                            </ul>
-
-                            <h2>What I worked on</h2>
-                            <p>
-                                Naninovel runs the story scenes the writers wrote, but everything you actually click on, the desktop, the websites, all of it, was mine to build as the main programmer. 
-                                The whole thing runs on events, so the desktop, browser, and story all talk to each other without being wired together directly. The main things I built:
-
-                                <ul>
-                                    <li>The system that runs the story, tracking what chapter you're on and what you've done, and only moving forward once you've done the right things</li>
-                                    <li>A two way hookup into Naninovel, reading and writing its story variables in C#, so the story controls what you can do and your clicks push the story forward</li>
-                                    <li>Custom Naninovel commands so the writers could trigger my systems straight from the script (open a website, pop a captcha or ID check, glitch the call window)</li>
-                                    <li>The whole desktop in Unity's Canvas and UI: icons, start menu, taskbar, browser, folders, an archive, a chat app, a video call window, and all the popups</li>
-                                    <li>A browser with several websites, multiple pages each, back and history navigation, favorites, and scrolling</li>
-                                    <li>Save and load for the browser, so it remembers which site you had open (which meant fighting Naninovel a bit, since it likes to hide custom UI on load)</li>
-                                    <li>A code puzzle where passwords hidden across the sites unlock a locked folder, tied into one of the endings</li>
-                                </ul>
-                            </p>
-
-                            <h2>Development Insights</h2>
-                            <p>
-                                Safe Web was a fun and interesting project to work on because of its unique mechanics. Instead of a normal game world, the whole game takes place on a fake computer, so the challenge was making a desktop and a browser that actually felt real, then letting the story take control of them to set up the scares. 
-                                Getting all those pieces to work together was tricky, and doing it with a team made it a really rewarding one to be part of.
-                            </p>
-                        </section>
-                    </div>
-
-                <!-- Footer -->
-                    <footer id="footer">
-                        <section class="split contact">
-                            <section>
-                                <h3>Phone</h3>
-                                <p>(606) 271-4122</p>
-                            </section>
-                            <section>
-                                <h3>Email</h3>
-                                <p>woodrowcrawford03@gmail.com</p>
-                            </section>
-                            <section>
-                                <h3>Social</h3>
-                                <ul class="icons alt">
-                                    <li><a href="https://www.linkedin.com/in/woodrow-crawford/" class="fab fa-linkedin"><span class="label"></span></a></li>
-                                    <li><a href="https://pheonyxgames.itch.io/" class="fab fa-itch-io"><span class="label"></span></a></li>
-                                    <li><a href="https://github.com/WoodrowCrawford" class="fab fa-github"><span class="label"></span></a></li>
-                                </ul>
-                            </section>
-                        </section>
-                    </footer>
-
-                <!-- Copyright -->
-                    <div id="copyright">
-                        <ul><li>&copy; Woodrow Crawford</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-                    </div>
-
+  <head>
+    <title>Safe Web - Project Details</title>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, user-scalable=no"
+      name="viewport"
+    />
+    <link href="../assets/css/main.css?v=2" rel="stylesheet" />
+    <noscript
+      ><link href="../assets/css/noscript.css" rel="stylesheet"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <a class="logo" href="../GamePages/SafeWebInfo.html">Safe Web</a>
+      </header>
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="../index.html">Games</a></li>
+          <li><a href="../indexPage2.html">Software &amp; Systems</a></li>
+          <li><a href="../AboutMe.html">About Me</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a
+              class="fab fa-linkedin"
+              href="https://www.linkedin.com/in/woodrow-crawford/"
+              ><span class="label"></span
+            ></a>
+          </li>
+          <li>
+            <a class="fab fa-itch-io" href="https://pheonyxgames.itch.io/"
+              ><span class="label"></span
+            ></a>
+          </li>
+          <li>
+            <a class="fab fa-github" href="https://github.com/WoodrowCrawford"
+              ><span class="label"></span
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Main -->
+      <div id="main">
+        <section class="post">
+          <header class="major">
+            <h1>
+              Safe Web<br /><span style="font-size: 1.2rem; font-weight: normal"
+                >A Deep Dive</span
+              >
+            </h1>
+            <p>
+              A visual novel created in Unity for a horror game jam. Includes a
+              virtual computer interaction system.
+              <br />
+            </p>
+          </header>
+          <span class="image main"
+            ><img alt="" src="../images/SafeWeb/wlARTY.png"
+          /></span>
+          <h2>Project Overview</h2>
+          <p>
+            Safe Web is a horror game made by a team for a Spooktober game jam,
+            built in Unity (C#), with me as the main programmer. The whole game
+            takes place on a fake computer: you click around a desktop, open
+            folders, browse a pretend internet, and the horror surfaces through
+            what you find. Can you uncover the story hidden in the files and
+            websites?
+          </p>
+          <h2>Key Features</h2>
+          <ul>
+            <li>
+              Virtual computer desktop you actually click around: icons,
+              folders, a chat app, and a video call window
+            </li>
+            <li>
+              A simulated web browser with several in game websites, plus
+              back/history and favorites
+            </li>
+            <li>Multiple endings based on the choices you make</li>
+            <li>Voice acting and a retro computer look</li>
+          </ul>
+          <h2>Development Details</h2>
+          <ul>
+            <li><strong>Role:</strong> Main Programmer (team project)</li>
+            <li>
+              <strong>Engine:</strong> Unity (with Naninovel visual novel
+              framework)
+            </li>
+            <li><strong>Language:</strong> C#</li>
+            <li><strong>Status:</strong> Completed</li>
+            <li><strong>Platforms:</strong> Windows, Mac</li>
+          </ul>
+          <h2>Media</h2>
+          <div class="row gtr-50 gtr-uniform">
+            <div class="col-4">
+              <span class="image fit"
+                ><img alt="" src="../images/SafeWeb/5_XoKE.png"
+              /></span>
             </div>
-
-        <!-- Scripts -->
-            <script src="../assets/js/jquery.min.js"></script>
-            <script src="../assets/js/jquery.scrollex.min.js"></script>
-            <script src="../assets/js/jquery.scrolly.min.js"></script>
-            <script src="../assets/js/browser.min.js"></script>
-            <script src="../assets/js/breakpoints.min.js"></script>
-            <script src="../assets/js/util.js"></script>
-            <script src="../assets/js/main.js"></script>
-
-    </body>
+            <div class="col-4">
+              <span class="image fit"
+                ><img alt="" src="../images/SafeWeb/Ng5ssZ.png"
+              /></span>
+            </div>
+            <div class="col-4">
+              <span class="image fit"
+                ><img alt="" src="../images/SafeWeb/oFV9J3.png"
+              /></span>
+            </div>
+            <div class="col-4">
+              <span class="image fit"
+                ><img alt="" src="../images/SafeWeb/aofvCP.png"
+              /></span>
+            </div>
+            <div class="col-4">
+              <span class="image fit"
+                ><img alt="" src="../images/SafeWeb/v+omX6.png"
+              /></span>
+            </div>
+          </div>
+          <h2>Download &amp; Source</h2>
+          <ul class="actions">
+            <li>
+              <a
+                class="button icon brands fa-itch-io"
+                href="https://madval.itch.io/safe-web-game"
+                >Download on itch</a
+              >
+            </li>
+            <li>
+              <a
+                class="button icon brands fa-github"
+                href="https://github.com/WoodrowCrawford/2025-Spooktober-Jam"
+                >View Source on GitHub</a
+              >
+            </li>
+          </ul>
+          <h2>What I worked on</h2>
+          <p>
+            Naninovel runs the story scenes the writers wrote, but everything
+            you actually click on, the desktop, the websites, all of it, was
+            mine to build as the main programmer. The whole thing runs on
+            events, so the desktop, browser, and story all talk to each other
+            without being wired together directly. The main things I built:
+          </p>
+          <ul>
+            <li>
+              The system that runs the story, tracking what chapter you're on
+              and what you've done, and only moving forward once you've done the
+              right things
+            </li>
+            <li>
+              A two way hookup into Naninovel, reading and writing its story
+              variables in C#, so the story controls what you can do and your
+              clicks push the story forward
+            </li>
+            <li>
+              Custom Naninovel commands so the writers could trigger my systems
+              straight from the script (open a website, pop a captcha or ID
+              check, glitch the call window)
+            </li>
+            <li>
+              The whole desktop in Unity's Canvas and UI: icons, start menu,
+              taskbar, browser, folders, an archive, a chat app, a video call
+              window, and all the popups
+            </li>
+            <li>
+              A browser with several websites, multiple pages each, back and
+              history navigation, favorites, and scrolling
+            </li>
+            <li>
+              Save and load for the browser, so it remembers which site you had
+              open (which meant fighting Naninovel a bit, since it likes to hide
+              custom UI on load)
+            </li>
+            <li>
+              A code puzzle where passwords hidden across the sites unlock a
+              locked folder, tied into one of the endings
+            </li>
+          </ul>
+          <h2>Development Insights</h2>
+          <p>
+            Safe Web was a fun and interesting project to work on because of its
+            unique mechanics. Instead of a normal game world, the whole game
+            takes place on a fake computer, so the challenge was making a
+            desktop and a browser that actually felt real, then letting the
+            story take control of them to set up the scares. Getting all those
+            pieces to work together was tricky, and doing it with a team made it
+            a really rewarding one to be part of.
+          </p>
+        </section>
+      </div>
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <section>
+            <h3>Phone</h3>
+            <p>(606) 271-4122</p>
+          </section>
+          <section>
+            <h3>Email</h3>
+            <p>woodrowcrawford03@gmail.com</p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a
+                  class="fab fa-linkedin"
+                  href="https://www.linkedin.com/in/woodrow-crawford/"
+                  ><span class="label"></span
+                ></a>
+              </li>
+              <li>
+                <a class="fab fa-itch-io" href="https://pheonyxgames.itch.io/"
+                  ><span class="label"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="fab fa-github"
+                  href="https://github.com/WoodrowCrawford"
+                  ><span class="label"></span
+                ></a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul>
+          <li>© Woodrow Crawford</li>
+          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
 </html>

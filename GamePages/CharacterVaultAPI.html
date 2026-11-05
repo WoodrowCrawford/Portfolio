@@ -1,138 +1,145 @@
-<!DOCTYPE HTML>
+<!doctype html>
+
 <!--
     Massively by HTML5 UP
     html5up.net | @ajlkn
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    <head>
-        <title>Character Vault API - Project Details</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="../assets/css/main.css?v=2" />
-        <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
-    </head>
-    <body class="is-preload">
-
-        <!-- Wrapper -->
-            <div id="wrapper">
-
-                <!-- Header -->
-                    <header id="header">
-                        <a href="../GamePages/CharacterVaultAPI.html" class="logo">Character Vault API</a>
-                    </header>
-
-                <!-- Nav -->
-                    <nav id="nav">
-                        <ul class="links">
-                            <li><a href="../index.html">Games</a></li>
-                            <li><a href="../indexPage2.html">Software &amp; Systems</a></li>
-                            <li><a href="../AboutMe.html">About Me</a></li>
-                        </ul>
-                        <ul class="icons">
-                            <li><a href="https://www.linkedin.com/in/woodrow-crawford/" class="fab fa-linkedin"><span class="label"></span></a></li>
-                            <li><a href="https://pheonyxgames.itch.io/" class="fab fa-itch-io"><span class="label"></span></a></li>
-                            <li><a href="https://github.com/WoodrowCrawford" class="fab fa-github"><span class="label"></span></a></li>
-                        </ul>
-                    </nav>
-
-                <!-- Main -->
-                    <div id="main">
-                        <section class="post">
-                            <header class="major">
-                                <h1>Character Vault API<br /><span style="font-size:1.2rem;font-weight:normal;">A Deep Dive</span></h1>
-                                <p>An API I developed for managing character data in games.<br>
-                                <br>
-                                </p>
-                            </header>
-                            <span class="image main"><img src="../images/CharacterVaultAPI/Unity WebGL Player _ Character Vault API - Google Chrome 7_21_2025 4_14_41 PM.png" alt="" /></span>
-
-                            <h2>Project Overview</h2>
-                            <p>
-                                Character Vault is a REST API I built in .NET (C#) for managing game character data. It's a full CRUD backend, developers can create, read, update, and delete characters, each with a name, class, and level. I built it to learn how to design a real backend API properly, so I structured it the way a production .NET service would be, rather than just throwing endpoints together.
-                            </p>
-
-                            <h2>Key Features</h2>
-                            <ul>
-                                <li>A full REST API with create, read, update, and delete operations</li>
-                                <li>Built on the repository pattern with dependency injection, so the storage layer can be swapped out without touching the API</li>
-                                <li>Separate request models for creating and updating, following proper API design</li>
-                                <li>Input validation and correct HTTP status codes (201, 400, 404, 204)</li>
-                                <li>Swagger UI for testing and documentation</li>
-                            </ul>
-
-                            <h2>Development Details</h2>
-                            <ul>
-                                <li><strong>Framework:</strong> .NET (ASP.NET Core Minimal APIs)</li>
-                                <li><strong>Language:</strong> C#</li>
-                                <li><strong>Status:</strong> Completed</li>
-                                <li><strong>Platforms:</strong> Cross-platform (.NET)</li>
-                            </ul>
-
-                            
-
-                            <h2>Download & Source</h2>
-                            <ul class="actions">
-                                <li><a href="https://github.com/WoodrowCrawford/CharacterVaultAPI" class="button icon brands fa-github">View Source on GitHub</a></li>
-                            </ul>
-
-                            <h2>What I worked on</h2>
-                            <p>
-                                I built this solo to teach myself how real backend APIs are designed, not just to make one that works, but to structure it the way a professional .NET project would be. What I built:
-                                <ul>
-                                    <li>The full set of REST endpoints for creating, reading, updating, and deleting characters</li>
-                                    <li>A repository behind an interface, injected through dependency injection, so the data source is swappable (it currently reads and writes JSON, but nothing in the API depends on that)</li>
-                                    <li>Separate models for create and update requests, kept apart from the character entity itself</li>
-                                    <li>Validation on incoming data, with the API returning the right HTTP status code for each outcome</li>
-                                    <li>Swagger integration so the whole thing is self-documenting and testable in the browser</li>
-                                </ul>
-                            </p>
-
-                            <h2>Development Insights</h2>
-                            <p>
-                                This was me stepping outside of game engines to learn proper backend development. The interesting part wasn't the CRUD itself, it was structuring the project well, using an interface and dependency injection so the storage layer isn't locked in, splitting out request models, and handling validation and status codes the right way. I learned a lot about how real APIs are designed, and it's the project that got me genuinely interested in the software side beyond just games.
-                            </p>
-                            
-                        </section>
-                    </div>
-
-                <!-- Footer -->
-                    <footer id="footer">
-                        <section class="split contact">
-                            <section>
-                                <h3>Phone</h3>
-                                <p>(606) 271-4122</p>
-                            </section>
-                            <section>
-                                <h3>Email</h3>
-                                <p>woodrowcrawford03@gmail.com</p>
-                            </section>
-                            <section>
-                                <h3>Social</h3>
-                                <ul class="icons alt">
-                                    <li><a href="https://www.linkedin.com/in/woodrow-crawford/" class="fab fa-linkedin"><span class="label"></span></a></li>
-                                    <li><a href="https://pheonyxgames.itch.io/" class="fab fa-itch-io"><span class="label"></span></a></li>
-                                    <li><a href="https://github.com/WoodrowCrawford" class="fab fa-github"><span class="label"></span></a></li>
-                                </ul>
-                            </section>
-                        </section>
-                    </footer>
-
-                <!-- Copyright -->
-                    <div id="copyright">
-                        <ul><li>&copy; Woodrow Crawford</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-                    </div>
-
-            </div>
-
-        <!-- Scripts -->
-            <script src="../assets/js/jquery.min.js"></script>
-            <script src="../assets/js/jquery.scrollex.min.js"></script>
-            <script src="../assets/js/jquery.scrolly.min.js"></script>
-            <script src="../assets/js/browser.min.js"></script>
-            <script src="../assets/js/breakpoints.min.js"></script>
-            <script src="../assets/js/util.js"></script>
-            <script src="../assets/js/main.js"></script>
-
-    </body>
+  <head>
+    <title>Character Vault API - Project Details</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport" />
+    <link href="../assets/css/main.css?v=2" rel="stylesheet" />
+    <noscript>
+      <link href="../assets/css/noscript.css" rel="stylesheet" />
+    </noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <a class="logo" href="../GamePages/CharacterVaultAPI.html">Character Vault API</a>
+      </header>
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="../index.html">Games</a></li>
+          <li><a href="../indexPage2.html">Software &amp; Systems</a></li>
+          <li><a href="../AboutMe.html">About Me</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a class="fab fa-linkedin" href="https://www.linkedin.com/in/woodrow-crawford/"><span class="label"></span></a>
+          </li>
+          <li>
+            <a class="fab fa-itch-io" href="https://pheonyxgames.itch.io/"><span class="label"></span></a>
+          </li>
+          <li>
+            <a class="fab fa-github" href="https://github.com/WoodrowCrawford"><span class="label"></span></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Main -->
+      <div id="main">
+        <section class="post">
+          <header class="major">
+            <h1>Character Vault API<br /><span style="font-size: 1.2rem; font-weight: normal">A Deep Dive</span></h1>
+            <p>
+              An API I developed for managing character data in games.<br />
+              <br />
+            </p>
+          </header>
+          <span class="image main"><img alt="" src="../images/CharacterVaultAPI/Unity WebGL Player _ Character Vault API - Google Chrome 7_21_2025 4_14_41 PM.png" /></span>
+          <h2>Project Overview</h2>
+          <p>
+            Character Vault is a REST API I built in .NET (C#) for managing game character data. It's a full CRUD backend, developers can create, read, update, and delete characters, each with a name,
+            class, and level. I built it to learn how to design a real backend API properly, so I structured it the way a production .NET service would be, rather than just throwing endpoints
+            together.
+          </p>
+          <h2>Key Features</h2>
+          <ul>
+            <li>A full REST API with create, read, update, and delete operations</li>
+            <li>Built on the repository pattern with dependency injection, so the storage layer can be swapped out without touching the API</li>
+            <li>Separate request models for creating and updating, following proper API design</li>
+            <li>Input validation and correct HTTP status codes (201, 400, 404, 204)</li>
+            <li>Swagger UI for testing and documentation</li>
+          </ul>
+          <h2>Development Details</h2>
+          <ul>
+            <li><strong>Framework:</strong> .NET (ASP.NET Core Minimal APIs)</li>
+            <li><strong>Language:</strong> C#</li>
+            <li><strong>Status:</strong> Completed</li>
+            <li><strong>Platforms:</strong> Cross-platform (.NET)</li>
+          </ul>
+          <h2>Download &amp; Source</h2>
+          <ul class="actions">
+            <li>
+              <a class="button icon brands fa-github" href="https://github.com/WoodrowCrawford/CharacterVaultAPI">View Source on GitHub</a>
+            </li>
+          </ul>
+          <h2>What I worked on</h2>
+          <p>I built this solo to teach myself how real backend APIs are designed, not just to make one that works, but to structure it the way a professional .NET project would be. What I built:</p>
+          <ul>
+            <li>The full set of REST endpoints for creating, reading, updating, and deleting characters</li>
+            <li>
+              A repository behind an interface, injected through dependency injection, so the data source is swappable (it currently reads and writes JSON, but nothing in the API depends on that)
+            </li>
+            <li>Separate models for create and update requests, kept apart from the character entity itself</li>
+            <li>Validation on incoming data, with the API returning the right HTTP status code for each outcome</li>
+            <li>Swagger integration so the whole thing is self-documenting and testable in the browser</li>
+          </ul>
+          <h2>Development Insights</h2>
+          <p>
+            This was me stepping outside of game engines to learn proper backend development. The interesting part wasn't the CRUD itself, it was structuring the project well, using an interface and
+            dependency injection so the storage layer isn't locked in, splitting out request models, and handling validation and status codes the right way. I learned a lot about how real APIs are
+            designed, and it's the project that got me genuinely interested in the software side beyond just games.
+          </p>
+        </section>
+      </div>
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <section>
+            <h3>Phone</h3>
+            <p>(606) 271-4122</p>
+          </section>
+          <section>
+            <h3>Email</h3>
+            <p>woodrowcrawford03@gmail.com</p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a class="fab fa-linkedin" href="https://www.linkedin.com/in/woodrow-crawford/"><span class="label"></span></a>
+              </li>
+              <li>
+                <a class="fab fa-itch-io" href="https://pheonyxgames.itch.io/"><span class="label"></span></a>
+              </li>
+              <li>
+                <a class="fab fa-github" href="https://github.com/WoodrowCrawford"><span class="label"></span></a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul>
+          <li>© Woodrow Crawford</li>
+          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
 </html>

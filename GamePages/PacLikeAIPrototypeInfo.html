@@ -1,136 +1,204 @@
-<!DOCTYPE HTML>
+<!doctype html>
+
 <!--
     Massively by HTML5 UP
     html5up.net | @ajlkn
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    <head>
-        <title>Pac-Like AI Prototype - Project Details</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="../assets/css/main.css?v=2" />
-        <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
-    </head>
-    <body class="is-preload">
-
-        <!-- Wrapper -->
-            <div id="wrapper">
-
-                <!-- Header -->
-                    <header id="header">
-                        <a href="../GamePages/PacLikeAIPrototypeInfo.html" class="logo">Pac-Like AI Prototype</a>
-                    </header>
-
-                <!-- Nav -->
-                    <nav id="nav">
-                        <ul class="links">
-                            <li><a href="../index.html">Games</a></li>
-                            <li><a href="../indexPage2.html">Games (Page 2)</a></li>
-                            <li><a href="../AboutMe.html">About Me</a></li>
-                        </ul>
-                        <ul class="icons">
-                            <li><a href="https://www.linkedin.com/in/woodrow-crawford/" class="fab fa-linkedin"><span class="label"></span></a></li>
-                            <li><a href="https://pheonyxgames.itch.io/" class="fab fa-itch-io"><span class="label"></span></a></li>
-                            <li><a href="https://github.com/WoodrowCrawford" class="fab fa-github"><span class="label"></span></a></li>
-                        </ul>
-                    </nav>
-
-                <!-- Main -->
-                    <div id="main">
-                        <section class="post">
-                            <header class="major">
-                                <h1>Pac-Like AI Prototype<br /><span style="font-size:1.2rem;font-weight:normal;">A Deep Dive</span></h1>
-                                <p>A small protoype that I made in college in C++.<br>
-                                <br>
-                                </p>
-                            </header>
-                            <span class="image main"><img src="../images/PacLikeAIPrototype/PacLike-Image.png" alt="" /></span>
-
-                            <h2>Project Overview</h2>
-                            <p>
-                                A pathfinding project I built in college in C++, where an AI-controlled ghost chases the player through a maze using the A* algorithm. I built it to really understand how pathfinding works, so instead of using a library, I implemented A* from scratch, along with the node graph and steering behaviors it runs on.
-                            </p>
-
-                            <h2>Key Features</h2>
-                            <ul>
-                                <li>A* pathfinding implemented from scratch in C++</li>
-                                <li>A node-graph system representing the maze for the algorithm to search</li>
-                                <li>Steering behaviors (seek, pursue, follow-path) driving the AI</li>
-                                <li>A hand-written math library for the vector and matrix math</li>
-                                <li>Rendered with raylib</li>
-                            </ul>
-
-                            <h2>Development Details</h2>
-                            <ul>
-                                <li><strong>Language:</strong> C++</li>
-                                <li><strong>Library:</strong> raylib (graphics)</li>
-                                <li><strong>Status:</strong> Completed</li>
-                                <li><strong>Platforms:</strong> Windows</li>
-                            </ul>
-
-                           
-
-                            <h2>Download & Source</h2>
-                            <ul class="actions">
-                                <li><a href="https://github.com/WoodrowCrawford/Pac-Like" class="button icon brands fa-github">View Source on GitHub</a></li>
-                            </ul>
-
-                            <h2>What I worked on</h2>
-                            <p>
-                                I built this in college to actually understand pathfinding instead of just using something prebuilt, so I wrote the whole thing in C++ from the ground up. What I built:
-                                <ul>
-                                    <li>The A* algorithm itself, an open and closed list, sorting nodes by their f-score to always explore the cheapest path first, then tracing back through parent nodes to build the final route</li>
-                                    <li>A node graph representing the maze that the algorithm searches across</li>
-                                    <li>Steering behaviors (seek, pursue, and path-following) that move the ghost along the path A* finds</li>
-                                    <li>A math library I wrote myself for the vectors and matrices everything is built on</li>
-                                </ul>
-                            </p>
-
-                            <h2>Development Insights</h2>
-                            <p>
-                                This is the project I'm proudest of on the fundamentals side. Implementing A* from scratch, not calling a library, but actually building the open and closed lists and the scoring myself, taught me how pathfinding really works under the hood. Writing my own math library and the node graph underneath it pushed my C++ and my understanding of data structures a lot further. It's the project that made algorithms click for me.
-                            </p>
-                        </section>
-                    </div>
-
-                <!-- Footer -->
-                    <footer id="footer">
-                        <section class="split contact">
-                            <section>
-                                <h3>Phone</h3>
-                                <p>(606) 271-4122</p>
-                            </section>
-                            <section>
-                                <h3>Email</h3>
-                                <p>woodrowcrawford03@gmail.com</p>
-                            </section>
-                            <section>
-                                <h3>Social</h3>
-                                <ul class="icons alt">
-                                    <li><a href="https://www.linkedin.com/in/woodrow-crawford/" class="fab fa-linkedin"><span class="label"></span></a></li>
-                                    <li><a href="https://pheonyxgames.itch.io/" class="fab fa-itch-io"><span class="label"></span></a></li>
-                                    <li><a href="https://github.com/WoodrowCrawford" class="fab fa-github"><span class="label"></span></a></li>
-                                </ul>
-                            </section>
-                        </section>
-                    </footer>
-
-                <!-- Copyright -->
-                    <div id="copyright">
-                        <ul><li>&copy; Woodrow Crawford</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-                    </div>
-
-            </div>
-
-        <!-- Scripts -->
-            <script src="../assets/js/jquery.min.js"></script>
-            <script src="../assets/js/jquery.scrollex.min.js"></script>
-            <script src="../assets/js/jquery.scrolly.min.js"></script>
-            <script src="../assets/js/browser.min.js"></script>
-            <script src="../assets/js/breakpoints.min.js"></script>
-            <script src="../assets/js/util.js"></script>
-            <script src="../assets/js/main.js"></script>
-
-    </body>
+  <head>
+    <title>Pac-Like AI Prototype - Project Details</title>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, user-scalable=no"
+      name="viewport"
+    />
+    <link href="../assets/css/main.css?v=2" rel="stylesheet" />
+    <noscript
+      ><link href="../assets/css/noscript.css" rel="stylesheet"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <a class="logo" href="../GamePages/PacLikeAIPrototypeInfo.html"
+          >Pac-Like AI Prototype</a
+        >
+      </header>
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="../index.html">Games</a></li>
+          <li><a href="../indexPage2.html">Software &amp; Systems</a></li>
+          <li><a href="../AboutMe.html">About Me</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a
+              class="fab fa-linkedin"
+              href="https://www.linkedin.com/in/woodrow-crawford/"
+              ><span class="label"></span
+            ></a>
+          </li>
+          <li>
+            <a class="fab fa-itch-io" href="https://pheonyxgames.itch.io/"
+              ><span class="label"></span
+            ></a>
+          </li>
+          <li>
+            <a class="fab fa-github" href="https://github.com/WoodrowCrawford"
+              ><span class="label"></span
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Main -->
+      <div id="main">
+        <section class="post">
+          <header class="major">
+            <h1>
+              Pac-Like AI Prototype<br /><span
+                style="font-size: 1.2rem; font-weight: normal"
+                >A Deep Dive</span
+              >
+            </h1>
+            <p>
+              A small protoype that I made in college in C++.<br />
+              <br />
+            </p>
+          </header>
+          <span class="image main"
+            ><img alt="" src="../images/PacLikeAIPrototype/PacLike-Image.png"
+          /></span>
+          <h2>Project Overview</h2>
+          <p>
+            A pathfinding project I built in college in C++, where an
+            AI-controlled ghost chases the player through a maze using the A*
+            algorithm. I built it to really understand how pathfinding works, so
+            instead of using a library, I implemented A* from scratch, along
+            with the node graph and steering behaviors it runs on.
+          </p>
+          <h2>Key Features</h2>
+          <ul>
+            <li>A* pathfinding implemented from scratch in C++</li>
+            <li>
+              A node-graph system representing the maze for the algorithm to
+              search
+            </li>
+            <li>
+              Steering behaviors (seek, pursue, follow-path) driving the AI
+            </li>
+            <li>A hand-written math library for the vector and matrix math</li>
+            <li>Rendered with raylib</li>
+          </ul>
+          <h2>Development Details</h2>
+          <ul>
+            <li><strong>Language:</strong> C++</li>
+            <li><strong>Library:</strong> raylib (graphics)</li>
+            <li><strong>Status:</strong> Completed</li>
+            <li><strong>Platforms:</strong> Windows</li>
+          </ul>
+          <h2>Download &amp; Source</h2>
+          <ul class="actions">
+            <li>
+              <a
+                class="button icon brands fa-github"
+                href="https://github.com/WoodrowCrawford/Pac-Like"
+                >View Source on GitHub</a
+              >
+            </li>
+          </ul>
+          <h2>What I worked on</h2>
+          <p>
+            I built this in college to actually understand pathfinding instead
+            of just using something prebuilt, so I wrote the whole thing in C++
+            from the ground up. What I built:
+          </p>
+          <ul>
+            <li>
+              The A* algorithm itself, an open and closed list, sorting nodes by
+              their f-score to always explore the cheapest path first, then
+              tracing back through parent nodes to build the final route
+            </li>
+            <li>
+              A node graph representing the maze that the algorithm searches
+              across
+            </li>
+            <li>
+              Steering behaviors (seek, pursue, and path-following) that move
+              the ghost along the path A* finds
+            </li>
+            <li>
+              A math library I wrote myself for the vectors and matrices
+              everything is built on
+            </li>
+          </ul>
+          <h2>Development Insights</h2>
+          <p>
+            This is the project I'm proudest of on the fundamentals side.
+            Implementing A* from scratch, not calling a library, but actually
+            building the open and closed lists and the scoring myself, taught me
+            how pathfinding really works under the hood. Writing my own math
+            library and the node graph underneath it pushed my C++ and my
+            understanding of data structures a lot further. It's the project
+            that made algorithms click for me.
+          </p>
+        </section>
+      </div>
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <section>
+            <h3>Phone</h3>
+            <p>(606) 271-4122</p>
+          </section>
+          <section>
+            <h3>Email</h3>
+            <p>woodrowcrawford03@gmail.com</p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a
+                  class="fab fa-linkedin"
+                  href="https://www.linkedin.com/in/woodrow-crawford/"
+                  ><span class="label"></span
+                ></a>
+              </li>
+              <li>
+                <a class="fab fa-itch-io" href="https://pheonyxgames.itch.io/"
+                  ><span class="label"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="fab fa-github"
+                  href="https://github.com/WoodrowCrawford"
+                  ><span class="label"></span
+                ></a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul>
+          <li>© Woodrow Crawford</li>
+          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
 </html>

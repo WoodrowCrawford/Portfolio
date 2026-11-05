@@ -1,135 +1,211 @@
-<!DOCTYPE HTML>
+<!doctype html>
+
 <!--
     Massively by HTML5 UP
     html5up.net | @ajlkn
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    <head>
-        <title>Inventory System Prototype - Project Details</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="../assets/css/main.css?v=2" />
-        <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
-    </head>
-    <body class="is-preload">
-
-        <!-- Wrapper -->
-            <div id="wrapper">
-
-                <!-- Header -->
-                    <header id="header">
-                        <a href="../GamePages/InventorySystemPrototypeInfo.html" class="logo">Inventory System Prototype</a>
-                    </header>
-
-                <!-- Nav -->
-                    <nav id="nav">
-                        <ul class="links">
-                            <li><a href="../index.html">Games</a></li>
-                            <li><a href="../indexPage2.html">Games (Page 2)</a></li>
-                            <li><a href="../AboutMe.html">About Me</a></li>
-                        </ul>
-                        <ul class="icons">
-                            <li><a href="https://www.linkedin.com/in/woodrow-crawford/" class="fab fa-linkedin"><span class="label"></span></a></li>
-                            <li><a href="https://pheonyxgames.itch.io/" class="fab fa-itch-io"><span class="label"></span></a></li>
-                            <li><a href="https://github.com/WoodrowCrawford" class="fab fa-github"><span class="label"></span></a></li>
-                        </ul>
-                    </nav>
-
-                <!-- Main -->
-                    <div id="main">
-                        <section class="post">
-                            <header class="major">
-                                <h1>Inventory System Prototype<br /><span style="font-size:1.2rem;font-weight:normal;">A Deep Dive</span></h1>
-                                <p>A small prototype made in Unreal Engine to demonstrate a basic inventory system.<br>
-                                </p>
-                            </header>
-                            <span class="image main"><img src="../images/InventorySystemPrototype/NewInventorySystem (64-bit Development PCD3D_SM5)  1_22_2023 5_13_05 PM.png" alt="" /></span>
-
-                            <h2>Project Overview</h2>
-                            <p>
-                                A prototype I built in Unreal Engine during college to learn how to architect an inventory system in C++. The player can pick up items, store them in a limited inventory, and use them, and I focused on structuring it properly, with C++ handling the logic and Blueprints handling the items and UI on top.
-                            </p>
-
-                            <h2>Key Features</h2>
-                            <ul>
-                                <li>Pick up, store, and use items, with a capacity limit</li>
-                                <li>An abstract item base class that specific items (like food that heals you) build on</li>
-                                <li>An inventory built as a reusable component any actor can have</li>
-                                <li>A UI that updates itself whenever the inventory changes</li>
-                                <li>Designer-friendly, new items can be made in Blueprints without touching code</li>
-                            </ul>
-
-                            <h2>Development Details</h2>
-                            <ul>
-                                <li><strong>Engine:</strong> Unreal Engine</li>
-                                <li><strong>Language:</strong> C++ (with Blueprints for items and UI)</li>
-                                <li><strong>Status:</strong> Completed</li>
-                                <li><strong>Platforms:</strong> Windows</li>
-                            </ul>
-
-                           
-
-                            <h2>Download & Source</h2>
-                            <ul class="actions">
-                                <li><a href="https://github.com/WoodrowCrawford/NewInventorySystem2" class="button icon brands fa-github">View Source on GitHub</a></li>
-                            </ul>
-
-                            <h2>What I worked on</h2>
-                            <p>
-                                A solo college prototype where the point was learning to structure an inventory the way a real Unreal project would, not just make one that works. What I built:
-                                <ul>
-                                    <li>An abstract item base class with a virtual Use function, so different item types (like food that heals you) can define their own behavior</li>
-                                    <li>The inventory as a component, with add, remove, and a capacity limit, so it can be dropped onto any actor</li>
-                                    <li>An event that fires whenever the inventory changes, which the Blueprint UI listens to so it updates on its own</li>
-                                    <li>Item definitions exposed to the editor, so new items can be created in Blueprints without writing more C++</li>
-                                </ul>
-                            </p>
-
-                            <h2>Development Insights</h2>
-                            <p>
-                                This was me learning how Unreal projects are actually structured in C++. The interesting part wasn't the inventory working, it was designing it well, using an abstract base class for items, building the inventory as a reusable component, and firing an event to keep the UI in sync instead of hard-wiring it. It taught me a lot about inheritance, components, and how C++ and Blueprints are meant to work together in Unreal.
-                            </p>
-                        </section>
-                    </div>
-
-                <!-- Footer -->
-                    <footer id="footer">
-                        <section class="split contact">
-                            <section>
-                                <h3>Phone</h3>
-                                <p>(606) 271-4122</p>
-                            </section>
-                            <section>
-                                <h3>Email</h3>
-                                <p>woodrowcrawford03@gmail.com</p>
-                            </section>
-                            <section>
-                                <h3>Social</h3>
-                                <ul class="icons alt">
-                                    <li><a href="https://www.linkedin.com/in/woodrow-crawford/" class="fab fa-linkedin"><span class="label"></span></a></li>
-                                    <li><a href="https://pheonyxgames.itch.io/" class="fab fa-itch-io"><span class="label"></span></a></li>
-                                    <li><a href="https://github.com/WoodrowCrawford" class="fab fa-github"><span class="label"></span></a></li>
-                                </ul>
-                            </section>
-                        </section>
-                    </footer>
-
-                <!-- Copyright -->
-                    <div id="copyright">
-                        <ul><li>&copy; Woodrow Crawford</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-                    </div>
-
-            </div>
-
-        <!-- Scripts -->
-            <script src="../assets/js/jquery.min.js"></script>
-            <script src="../assets/js/jquery.scrollex.min.js"></script>
-            <script src="../assets/js/jquery.scrolly.min.js"></script>
-            <script src="../assets/js/browser.min.js"></script>
-            <script src="../assets/js/breakpoints.min.js"></script>
-            <script src="../assets/js/util.js"></script>
-            <script src="../assets/js/main.js"></script>
-
-    </body>
+  <head>
+    <title>Inventory System Prototype - Project Details</title>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, user-scalable=no"
+      name="viewport"
+    />
+    <link href="../assets/css/main.css?v=2" rel="stylesheet" />
+    <noscript
+      ><link href="../assets/css/noscript.css" rel="stylesheet"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <a class="logo" href="../GamePages/InventorySystemPrototypeInfo.html"
+          >Inventory System Prototype</a
+        >
+      </header>
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="../index.html">Games</a></li>
+          <li><a href="../indexPage2.html">Software &amp; Systems</a></li>
+          <li><a href="../AboutMe.html">About Me</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a
+              class="fab fa-linkedin"
+              href="https://www.linkedin.com/in/woodrow-crawford/"
+              ><span class="label"></span
+            ></a>
+          </li>
+          <li>
+            <a class="fab fa-itch-io" href="https://pheonyxgames.itch.io/"
+              ><span class="label"></span
+            ></a>
+          </li>
+          <li>
+            <a class="fab fa-github" href="https://github.com/WoodrowCrawford"
+              ><span class="label"></span
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Main -->
+      <div id="main">
+        <section class="post">
+          <header class="major">
+            <h1>
+              Inventory System Prototype<br /><span
+                style="font-size: 1.2rem; font-weight: normal"
+                >A Deep Dive</span
+              >
+            </h1>
+            <p>
+              A small prototype made in Unreal Engine to demonstrate a basic
+              inventory system.<br />
+            </p>
+          </header>
+          <span class="image main"
+            ><img
+              alt=""
+              src="../images/InventorySystemPrototype/NewInventorySystem (64-bit Development PCD3D_SM5)  1_22_2023 5_13_05 PM.png"
+          /></span>
+          <h2>Project Overview</h2>
+          <p>
+            A prototype I built in Unreal Engine during college to learn how to
+            architect an inventory system in C++. The player can pick up items,
+            store them in a limited inventory, and use them, and I focused on
+            structuring it properly, with C++ handling the logic and Blueprints
+            handling the items and UI on top.
+          </p>
+          <h2>Key Features</h2>
+          <ul>
+            <li>Pick up, store, and use items, with a capacity limit</li>
+            <li>
+              An abstract item base class that specific items (like food that
+              heals you) build on
+            </li>
+            <li>
+              An inventory built as a reusable component any actor can have
+            </li>
+            <li>A UI that updates itself whenever the inventory changes</li>
+            <li>
+              Designer-friendly, new items can be made in Blueprints without
+              touching code
+            </li>
+          </ul>
+          <h2>Development Details</h2>
+          <ul>
+            <li><strong>Engine:</strong> Unreal Engine</li>
+            <li>
+              <strong>Language:</strong> C++ (with Blueprints for items and UI)
+            </li>
+            <li><strong>Status:</strong> Completed</li>
+            <li><strong>Platforms:</strong> Windows</li>
+          </ul>
+          <h2>Download &amp; Source</h2>
+          <ul class="actions">
+            <li>
+              <a
+                class="button icon brands fa-github"
+                href="https://github.com/WoodrowCrawford/NewInventorySystem2"
+                >View Source on GitHub</a
+              >
+            </li>
+          </ul>
+          <h2>What I worked on</h2>
+          <p>
+            A solo college prototype where the point was learning to structure
+            an inventory the way a real Unreal project would, not just make one
+            that works. What I built:
+          </p>
+          <ul>
+            <li>
+              An abstract item base class with a virtual Use function, so
+              different item types (like food that heals you) can define their
+              own behavior
+            </li>
+            <li>
+              The inventory as a component, with add, remove, and a capacity
+              limit, so it can be dropped onto any actor
+            </li>
+            <li>
+              An event that fires whenever the inventory changes, which the
+              Blueprint UI listens to so it updates on its own
+            </li>
+            <li>
+              Item definitions exposed to the editor, so new items can be
+              created in Blueprints without writing more C++
+            </li>
+          </ul>
+          <h2>Development Insights</h2>
+          <p>
+            This was me learning how Unreal projects are actually structured in
+            C++. The interesting part wasn't the inventory working, it was
+            designing it well, using an abstract base class for items, building
+            the inventory as a reusable component, and firing an event to keep
+            the UI in sync instead of hard-wiring it. It taught me a lot about
+            inheritance, components, and how C++ and Blueprints are meant to
+            work together in Unreal.
+          </p>
+        </section>
+      </div>
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <section>
+            <h3>Phone</h3>
+            <p>(606) 271-4122</p>
+          </section>
+          <section>
+            <h3>Email</h3>
+            <p>woodrowcrawford03@gmail.com</p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a
+                  class="fab fa-linkedin"
+                  href="https://www.linkedin.com/in/woodrow-crawford/"
+                  ><span class="label"></span
+                ></a>
+              </li>
+              <li>
+                <a class="fab fa-itch-io" href="https://pheonyxgames.itch.io/"
+                  ><span class="label"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="fab fa-github"
+                  href="https://github.com/WoodrowCrawford"
+                  ><span class="label"></span
+                ></a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul>
+          <li>© Woodrow Crawford</li>
+          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
 </html>

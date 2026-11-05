@@ -1,136 +1,208 @@
-<!DOCTYPE HTML>
+<!doctype html>
+
 <!--
     Massively by HTML5 UP
     html5up.net | @ajlkn
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    <head>
-        <title>Project 2D Fanbase - Project Details</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="../assets/css/main.css?v=2" />
-        <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
-    </head>
-    <body class="is-preload">
-
-        <!-- Wrapper -->
-            <div id="wrapper">
-
-                <!-- Header -->
-                    <header id="header">
-                        <a href="../GamePages/Project2DFanbaseInfo.html" class="logo">Project 2D Fanbase</a>
-                    </header>
-
-                <!-- Nav -->
-                    <nav id="nav">
-                        <ul class="links">
-                            <li><a href="../index.html">Games</a></li>
-                            <li><a href="../indexPage2.html">Games (Page 2)</a></li>
-                            <li><a href="../AboutMe.html">About Me</a></li>
-                        </ul>
-                        <ul class="icons">
-                            <li><a href="https://www.linkedin.com/in/woodrow-crawford/" class="fab fa-linkedin"><span class="label"></span></a></li>
-                            <li><a href="https://pheonyxgames.itch.io/" class="fab fa-itch-io"><span class="label"></span></a></li>
-                            <li><a href="https://github.com/WoodrowCrawford" class="fab fa-github"><span class="label"></span></a></li>
-                        </ul>
-                    </nav>
-
-                <!-- Main -->
-                    <div id="main">
-                        <section class="post">
-                            <header class="major">
-                                <h1>Project 2D Fanbase<br /><span style="font-size:1.2rem;font-weight:normal;">A Deep Dive</span></h1>
-                                <p>A passion project I created in Unity.<br>
-                                <br>
-                                </p>
-                            </header>
-                            <span class="image main"><img src="../images/Project2DFanbase/Project-2D-Fanbase.png" alt="" /></span>
-
-                            <h2>Project Overview</h2>
-                            <p>
-                                Project 2D Fanbase is a passion project I built in Unity on my own time, a Pokémon-style RPG. You walk around, run into creatures in the grass, and fight them in turn-based battles. I made it to challenge myself and learn how a system like Pokémon actually works under the hood.
-                            </p>
-
-                            <h2>Key Features</h2>
-                            <ul>
-                                <li>A Pokémon-style turn-based battle system</li>
-                                <li>Data-driven creatures built as ScriptableObjects, with stats, types, and learnable moves</li>
-                                <li>A full type-effectiveness chart, so attacks are super effective or not very effective like the real thing</li>
-                                <li>Grass encounters and a retro overworld</li>
-                            </ul>
-
-                            <h2>Development Details</h2>
-                            <ul>
-                                <li><strong>Role:</strong> Sole Developer</li>
-                                <li><strong>Engine:</strong> Unity</li>
-                                <li><strong>Language:</strong> C#</li>
-                                <li><strong>Status:</strong> In Development</li>
-                                <li><strong>Platforms:</strong> Windows</li>
-                            </ul>
-
-
-                            <h2>Download & Source</h2>
-                            <ul class="actions">
-                                <li><a href="https://github.com/WoodrowCrawford/Project-2d-fanbase" class="button icon brands fa-github">View Source on GitHub</a></li>
-                            </ul>
-
-
-                            <h2>What I Worked On</h2>
-                            <p>
-                                I built this one solo, on my own time, to figure out how an RPG like Pokémon actually works underneath. That meant building the systems from the ground up:
-                                <ul>
-                                    <li>Creatures made as ScriptableObjects, so I can create a whole new one (stats, types, moves, sprites) as an asset without writing any code</li>
-                                    <li>A runtime layer that builds a creature from that data, hands it the moves it's high enough level to know, and calculates its stats with real formulas</li>
-                                    <li>A turn-based battle system built as a state machine, with menu-driven actions, an HP bar, and battle dialogue</li>
-                                    <li>The full type chart, so every attack checks its type against the target's and deals the right effectiveness</li>
-                                </ul>
-                            </p>
-
-                            <h2>Development Insights</h2>
-                            <p>
-                                I made this as a passion project to push myself and understand how a game like Pokémon is put together. The most rewarding part was the systems work, using ScriptableObjects to keep the creature data separate from the code, and building the battle and type systems so they'd actually behave like the real thing. I learned a ton about designing data-driven systems, which is something I've carried into everything I've built since.
-                            </p>
-                        </section>
-                    </div>
-
-                <!-- Footer -->
-                    <footer id="footer">
-                        <section class="split contact">
-                            <section>
-                                <h3>Phone</h3>
-                                <p>(606) 271-4122</p>
-                            </section>
-                            <section>
-                                <h3>Email</h3>
-                                <p>woodrowcrawford03@gmail.com</p>
-                            </section>
-                            <section>
-                                <h3>Social</h3>
-                                <ul class="icons alt">
-                                    <li><a href="https://www.linkedin.com/in/woodrow-crawford/" class="fab fa-linkedin"><span class="label"></span></a></li>
-                                    <li><a href="https://pheonyxgames.itch.io/" class="fab fa-itch-io"><span class="label"></span></a></li>
-                                    <li><a href="https://github.com/WoodrowCrawford" class="fab fa-github"><span class="label"></span></a></li>
-                                </ul>
-                            </section>
-                        </section>
-                    </footer>
-
-                <!-- Copyright -->
-                    <div id="copyright">
-                        <ul><li>&copy; Woodrow Crawford</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-                    </div>
-
-            </div>
-
-        <!-- Scripts -->
-            <script src="../assets/js/jquery.min.js"></script>
-            <script src="../assets/js/jquery.scrollex.min.js"></script>
-            <script src="../assets/js/jquery.scrolly.min.js"></script>
-            <script src="../assets/js/browser.min.js"></script>
-            <script src="../assets/js/breakpoints.min.js"></script>
-            <script src="../assets/js/util.js"></script>
-            <script src="../assets/js/main.js"></script>
-
-    </body>
+  <head>
+    <title>Project 2D Fanbase - Project Details</title>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, user-scalable=no"
+      name="viewport"
+    />
+    <link href="../assets/css/main.css?v=2" rel="stylesheet" />
+    <noscript
+      ><link href="../assets/css/noscript.css" rel="stylesheet"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <a class="logo" href="../GamePages/Project2DFanbaseInfo.html"
+          >Project 2D Fanbase</a
+        >
+      </header>
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="../index.html">Games</a></li>
+          <li><a href="../indexPage2.html">Software &amp; Systems</a></li>
+          <li><a href="../AboutMe.html">About Me</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a
+              class="fab fa-linkedin"
+              href="https://www.linkedin.com/in/woodrow-crawford/"
+              ><span class="label"></span
+            ></a>
+          </li>
+          <li>
+            <a class="fab fa-itch-io" href="https://pheonyxgames.itch.io/"
+              ><span class="label"></span
+            ></a>
+          </li>
+          <li>
+            <a class="fab fa-github" href="https://github.com/WoodrowCrawford"
+              ><span class="label"></span
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Main -->
+      <div id="main">
+        <section class="post">
+          <header class="major">
+            <h1>
+              Project 2D Fanbase<br /><span
+                style="font-size: 1.2rem; font-weight: normal"
+                >A Deep Dive</span
+              >
+            </h1>
+            <p>
+              A passion project I created in Unity.<br />
+              <br />
+            </p>
+          </header>
+          <span class="image main"
+            ><img
+              alt=""
+              src="../images/Project2DFanbase/Project-2D-Fanbase.png"
+          /></span>
+          <h2>Project Overview</h2>
+          <p>
+            Project 2D Fanbase is a passion project I built in Unity on my own
+            time, a Pokémon-style RPG. You walk around, run into creatures in
+            the grass, and fight them in turn-based battles. I made it to
+            challenge myself and learn how a system like Pokémon actually works
+            under the hood.
+          </p>
+          <h2>Key Features</h2>
+          <ul>
+            <li>A Pokémon-style turn-based battle system</li>
+            <li>
+              Data-driven creatures built as ScriptableObjects, with stats,
+              types, and learnable moves
+            </li>
+            <li>
+              A full type-effectiveness chart, so attacks are super effective or
+              not very effective like the real thing
+            </li>
+            <li>Grass encounters and a retro overworld</li>
+          </ul>
+          <h2>Development Details</h2>
+          <ul>
+            <li><strong>Role:</strong> Sole Developer</li>
+            <li><strong>Engine:</strong> Unity</li>
+            <li><strong>Language:</strong> C#</li>
+            <li><strong>Status:</strong> In Development</li>
+            <li><strong>Platforms:</strong> Windows</li>
+          </ul>
+          <h2>Download &amp; Source</h2>
+          <ul class="actions">
+            <li>
+              <a
+                class="button icon brands fa-github"
+                href="https://github.com/WoodrowCrawford/Project-2d-fanbase"
+                >View Source on GitHub</a
+              >
+            </li>
+          </ul>
+          <h2>What I Worked On</h2>
+          <p>
+            I built this one solo, on my own time, to figure out how an RPG like
+            Pokémon actually works underneath. That meant building the systems
+            from the ground up:
+          </p>
+          <ul>
+            <li>
+              Creatures made as ScriptableObjects, so I can create a whole new
+              one (stats, types, moves, sprites) as an asset without writing any
+              code
+            </li>
+            <li>
+              A runtime layer that builds a creature from that data, hands it
+              the moves it's high enough level to know, and calculates its stats
+              with real formulas
+            </li>
+            <li>
+              A turn-based battle system built as a state machine, with
+              menu-driven actions, an HP bar, and battle dialogue
+            </li>
+            <li>
+              The full type chart, so every attack checks its type against the
+              target's and deals the right effectiveness
+            </li>
+          </ul>
+          <h2>Development Insights</h2>
+          <p>
+            I made this as a passion project to push myself and understand how a
+            game like Pokémon is put together. The most rewarding part was the
+            systems work, using ScriptableObjects to keep the creature data
+            separate from the code, and building the battle and type systems so
+            they'd actually behave like the real thing. I learned a ton about
+            designing data-driven systems, which is something I've carried into
+            everything I've built since.
+          </p>
+        </section>
+      </div>
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <section>
+            <h3>Phone</h3>
+            <p>(606) 271-4122</p>
+          </section>
+          <section>
+            <h3>Email</h3>
+            <p>woodrowcrawford03@gmail.com</p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a
+                  class="fab fa-linkedin"
+                  href="https://www.linkedin.com/in/woodrow-crawford/"
+                  ><span class="label"></span
+                ></a>
+              </li>
+              <li>
+                <a class="fab fa-itch-io" href="https://pheonyxgames.itch.io/"
+                  ><span class="label"></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="fab fa-github"
+                  href="https://github.com/WoodrowCrawford"
+                  ><span class="label"></span
+                ></a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul>
+          <li>© Woodrow Crawford</li>
+          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
 </html>
